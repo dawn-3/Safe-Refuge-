@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500&family=Lato:ital,wght@1,400;1,700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script defer src="index.js"></script>
+  <title>Safe Refuge</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦋</text></svg>">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="main__img">
+      <!-- This div is for the navbar's content, I want it to remain centered -->
+      <div class="header__content">
+        <!-- Anchor tag for the logo so it is 'clickable' -->
+        <a href="#" class="logo">
+          <img src="https://assets.codepen.io/10558578/logo.png" alt="the logo" width="160px" class="logo__img">
+        </a>
+
+        <!-- Nested markup for the navbar content -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <!-- The links are inside of the item -->
+            <li class="nav__item">
+              <a href="#main__1" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#section__a" class="nav__link">Wellbeing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#section__b" class="nav__link">Healing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#section__d" class="nav__link">Resources</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- The main message -->
+      <main class="main__1">
+        <section id="section__1" class="grid">
+          <div class="content__wrap">
+            <h1 class="heading">Let inner peace be your Refuge</h1>
+            <p class="text">Here to lend a hand within the confines of the refugee camp, isolation, trauma, and uncertainty. <span class="text__bold">You are not alone</span>.</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </header>
+
+
+  <!-- The all the way up button -->
+  <a href="#main__1" onclick="scrollToTop()" class="button">Up</a>
+
+
+  <!-- The main area -->
+  <main id="main">
+    <!-- Section A -->
+    <section id="section__a" class="gird">
+
+      <div class="content__wrap">
+        <h2 class="content__title">Your Well-being</h2>
+        <div class="content__text">
+          <p>
+            Your mental well-being as a refugee is a critical concern that demands attention and support. Forced to flee your home due to conflict, persecution, or disaster, you often face traumatic experiences and ongoing uncertainty. Your mental health can be profoundly affected, with many of us experiencing symptoms of anxiety, depression, and post-traumatic stress disorder. Adequate mental health services, including counseling and psychosocial support, are crucial to addressing your needs and promoting healing. Culturally sensitive approaches, community engagement, and access to safe environments play essential roles in fostering resilience and restoring hope for you as you rebuild your life.
+          </p>
+          <div class="video__container">
+            <iframe id="the__video" width="500" height="260" src="https://www.youtube-nocookie.com/embed/cKvR7au-VmA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div id="video__overlay"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section B -->
+    <section id="section__b" class="grid">
+      <!-- Wellbeing flash cards section -->
+      <ul>
+        <li>
+          <div class="row__main">
+            <div class="card">
+              <img src="https://assets.codepen.io/10558578/healing1.jpg" alt="sitting and waiting" class="imges">
+              <div class="card__content">
+                <h3 class="card__title">Dealing with "Now What?"</h3>
+                <p>As a refugee, I know that the "now what?" feeling can be overwhelming, but there are steps you can take to improve your mental health:</p>
+                <div class="list__content">
+                  <ol>
+                    <li>Seek support: Reach out to local organizations, support groups, or refugee-specific services that can provide guidance and assistance. They can connect you with resources and professionals who specialize in refugee mental health.</li>
+                    <li>Connect with others: Build a support network by connecting with fellow refugees or members of your community. Sharing experiences and supporting one another can provide a sense of belonging and understanding.</li>
+                    <li>Establish routines: Creating daily routines and structure can provide a sense of stability and control amidst uncertainty. Set achievable goals and prioritize tasks to regain a sense of purpose.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div class="card">
+            <img src="https://assets.codepen.io/10558578/healing2.jpg" alt="a choir singing and holding hands" class="imges">
+            <div class="card__content">
+              <h3 class="card__title">Finding Your New Tribe</h3>
+              <p>Connecting with others in your new country as a refugee can greatly contribute to improving your mental health. Here are some ways to foster connections:</p>
+              <div class="list__content">
+                <ol>
+                  <li>Attend community events: Look for local events, workshops, or gatherings where you can meet people from diverse backgrounds. Cultural festivals, language exchange groups, or community center activities are excellent opportunities to engage with others.</li>
+                  <li>Volunteer: Find volunteer opportunities within your community or at organizations that align with your interests. Volunteering not only allows you to give back but also helps you connect with like-minded individuals and build new relationships.</li>
+                  <li>Language classes: Enroll in language classes or conversation clubs to improve your language skills and connect with classmates. Engaging in language learning activities can lead to meaningful friendships and increased confidence in your new environment.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div class="card">
+            <img src="https://assets.codepen.io/10558578/healing3.jpg" alt="meditating outside" class="imges">
+            <div class="card__content">
+              <h3 class="card__title">Your Healing Journey</h3>
+              <p>Starting your healing journey as a refugee involves taking intentional steps towards your well-being and self-care. Here are some suggestions on what you can do:</p>
+              <div class="list__content">
+                <ol>
+                  <li>Acknowledge your experiences: Recognize and validate the emotions and challenges you have faced as a refugee. Allow yourself to grieve and process your past while understanding that healing is possible.</li>
+                  <li>Seek professional help: Consider finding a mental health professional who specializes in trauma or refugee mental health. They can provide therapy, counseling, or other evidence-based interventions to support your healing process.</li>
+                  <li>Practice self-care: Prioritize self-care activities that promote your physical, emotional, and mental well-being. Engage in activities such as exercise, mindfulness, journaling, or hobbies that bring you joy and relaxation.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section C -->
+    <section id="section__c" class="gird">
+      <div class="content__wrap">
+        <h2 class="content__title">Foster Inner Peace</h2>
+        <p>Fostering inner peace as a refugee can be a transformative and empowering process. Here are some practices that can help you cultivate inner peace:</p>
+        <div class="list__content">
+          <ol>
+            <li>Engage in self-reflection: Take time for self-reflection and introspection. Journaling, self-inquiry, or quiet contemplation can help you process your emotions, gain insights, and foster a deeper understanding of yourself.</li><br>
+            <li>Connect with nature: Spend time in nature whenever possible. Take walks in parks, visit nearby green spaces, or simply sit outside and observe the natural surroundings. Nature has a calming effect on the mind and can help foster a sense of peace and tranquility.</li><br>
+            <li>Practice self-compassion: Be kind and compassionate towards yourself, acknowledging the difficulties you have faced and the strength you have shown. Treat yourself with the same kindness and understanding you would extend to a dear friend.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section D -->
+    <section id="section__d" class="grid">
+      <!-- Box 1 -->
+      <div class="box">
+        <h2 class="content__title">Resources</h2>
+        <p>Here are some of the resources that are helping me personally:</p>
+        <div class="list__content">
+          <ol>
+            <li>"Complex PTSD: From Surviving to Thriving" is a book written by Pete Walker, a psychotherapist and survivor of Complex Post-Traumatic Stress Disorder (C-PTSD). Published in 2013, this self-help book provides valuable insights and guidance for individuals who have experienced complex trauma and are seeking to heal and thrive in their lives.</li><br>
+            <li>Being Well podcast: "Being Well" is a podcast that focuses on mental health and is co-hosted by Forrest Hansen and his father, Rick Hansson, a practicing psychologist. The podcast explores various topics related to mental well-being, offers insights, and provides advice or strategies for improving mental health. <div class="link"><a href="https://youtube.com/@ForrestHanson" target="_blank">Being Well</a></div><br>
+            <li>"Healing the Shame That Binds You" is a book written by John Bradshaw, a prominent figure in the field of self-help and psychology. The book emphasizes the importance of understanding and acknowledging shame, as well as its underlying causes, such as childhood experiences, societal influences, and cultural conditioning.</li><br>
+          </ol>
+          <p><span class="text__bold">Please keep in mind that I am not a mental health provider. While this website can provide insights and strategies for healing, it can also be beneficial to seek support from mental health professionals, support groups, or cultural organizations that specialize in assisting refugees. They can provide additional resources, guidance, and a safe space to explore and address the specific challenges you may be facing.</span></p>
+        </div>
+      </div>
+      <!-- Box 2 -->
+      <div class="box">
+        <h2 class="content__title">Safe Refuge's Message</h2>
+        <p>
+          I created this website for the sole purpose of supporting and nurturing your mental health. I understand the unique challenges and experiences you face as a refugee, and I want you to know that you are not alone on this journey. This platform is designed to provide an empowering space where you can access resources, tools that resonate with your own lived experiences.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="main__footer" class="grid">
+    <div>© Safe Refuge</div>
+<!-- Another link for the YouTube video :) -->
+    <div>Project By <a href="https://youtu.be" target="_blank">Mariam M.T</a></div>
+  </footer>
+  <br>
+
+  <!-- The dark mode button -->
+  <button onclick="toggleDarkMode()" class="dark_mode">Dark Mode 🌗</button>
+</body>
+</html>

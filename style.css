@@ -1,0 +1,356 @@
+/* Resetting the elements from the default styling by using the universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Base styling */
+body {
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.819);
+  background-position: center center;
+  font-size: 1.1em;
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+h2, h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+/* The rest of the styling */
+.header {
+  background-color: rgba(218, 216, 212, 0.26);
+  font-size: large;
+}
+
+/* Working on the navbar's layouts using flexbox */
+.header__content {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Working on the logo img by removing the white space and position it better */
+.logo {
+  display: block;
+}
+
+.logo__img {
+  display: block;
+  min-height: 90px;
+}
+
+/* Styling the navbar */
+.nav {
+  position: sticky;
+  scroll-behavior: smooth;
+  scroll-padding: var(--scroll-padding, 5rem);
+  background: var(--clr-primary-400);
+}
+
+/* Using flexbox to put space between the navbar content */
+.nav__list {
+  display: flex;
+  column-gap: 40px;
+  column-gap: 1;
+}
+
+.nav__link {
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(194, 211, 251);
+  /* For a smooth hover */
+  transition: color 0.4s;
+}
+
+/* Adding a hover and focus states to the nav links */
+.nav__link:hover,
+.nav__link:focus {
+  color: rgb(211, 177, 56);
+}
+
+/* The main message */
+.main__1 {
+  display: grid;
+  text-align: center;
+  margin-top: 30px;
+  padding: 0em 2;
+}
+
+/* Using the ID to style the text in the main message */
+#section__1 h1 {
+  display: grid;
+  position: relative;
+  bottom: 40px;
+}
+
+.heading {
+  font-size: 64px;
+  font-weight: 800;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0.9;
+  color: #ffffff;
+}
+
+.text {
+  font-size: 25px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 30px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.text__bold {
+  font-weight: 700;
+}
+
+#section__1 {
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+.header .main__img {
+  position: inherit;
+  background: url(https://assets.codepen.io/10558578/mainPic.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+/* Containing the text in the header */
+#section__1 .content__wrap {
+  padding: 0em 1em 4em;
+}
+
+/* Section A */
+#section__a {
+  background: rgba(89, 141, 200, 0.819);
+  color: rgb(255, 255, 255);
+  padding-bottom: 2em;
+  padding: 0 4em 4em;
+  width: 100%;
+}
+
+/* Section B */
+#section__b {
+  padding: 2em 1em 1em;
+}
+
+#section__b ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling the flash cards */
+#section__b li {
+  margin-bottom: 1em;
+  background: rgb(208, 181, 153);
+  color: rgb(255, 255, 255);
+}
+
+.card__content {
+  padding: 1.5em;
+}
+
+/* Section C */
+#section__c {
+  color: rgba(89, 141, 200, 0.819);
+  padding: 2em;
+  padding-bottom: 4em;
+  padding: 0 6em 6em;
+}
+
+/* Section D */
+#section__d .box {
+  padding: 2em;
+  color: #fff;
+}
+
+#section__d .box:first-child {
+  background: rgba(89, 141, 200, 0.819);
+  color: rgb(255, 255, 255);
+}
+
+#section__d .box:nth-child(2) {
+  background: rgb(208, 181, 153);
+  color: rgba(253, 253, 253, 0.984);
+}
+
+/* Styling the link in the resources */
+.link {
+  font-size: large;
+  font-weight: bold;
+  color: rgb(194, 211, 251);
+  /* For a smooth hover */
+  transition: color 0.4s;
+}
+
+/* Adding a hover and focus states to the resources link */
+.link:hover,
+.link:focus {
+  color: rgb(211, 177, 56);
+}
+
+/* Footer */
+#main__footer {
+  display: grid;
+  padding: 1em;
+  color: rgb(208, 181, 153);
+  background: rgba(255, 255, 255, 0.819);
+  text-align: center;
+  font-size: large;
+}
+
+#main__footer a {
+  color: rgba(89, 141, 200, 0.819);
+  text-decoration: none;
+}
+
+/* Styling the "All the way up" button */
+.button {
+  color: #fff;
+  background: rgba(89, 141, 200, 0.58);
+  padding: 10px 15px;
+  border: none;
+  position: fixed;
+  top: 403px;
+  float: left;
+  right: 0px;
+}
+
+.button:hover {
+  background: rgb(208, 181, 153);
+  color: #fff;
+}
+
+/* Styling the dark mode button */
+.dark__mode {
+  background-color: rgb(18, 49, 85);
+  color: rgb(255, 217, 134);
+}
+
+.dark_mode {
+  padding: 10px 10px;
+  margin-bottom: 1em;
+  background-color: rgba(89, 141, 200, 0.819);
+  color: rgb(255, 211, 163);
+  border: none;
+  border-radius: 5px;
+  cursor: default;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.dark_mode:hover {
+  background-color: #7885a293;
+  transform: scale(1.1);
+}
+
+/* Media queries for a better layout on smaller devices */
+/* This is by far the most challenging part, figuring out how to control the layout. */
+@media (min-width: 1200px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  #section__a .content__text {
+    columns: 2;
+    column-gap: 2em;
+  }
+
+  #section__a .content__text p {
+    padding-top: 5px;
+    position: relative;
+    bottom: 5px;
+    margin-top: 20px;
+  }
+
+  #section__a,
+  .content__wrap h2 {
+    padding-top: 0;
+    position: relative;
+    top: 20px;
+  }
+
+  .content__wrap,
+  #section__b ul {
+    grid-column: 2/4;
+  }
+
+  .main__1 #section__1 div {
+    grid-column: span 4;
+  }
+
+  .box,
+  #main__footer,
+  div {
+    grid-column: span 2;
+  }
+
+  #section__b,
+  ul {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 15px;
+    top: 20px;
+    transition: 0.5s;
+  }
+
+  #section__b li {
+    width: 100%;
+  }
+
+  .list__content {
+    list-style-type: lower-alpha;
+    text-align: center;
+  }
+}
+
+
+
+/* the YouTube link:https://youtu.be/fnVGpk3By3I */
